@@ -1,0 +1,46 @@
+body {
+    border: 20px solid #7B89AD;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    /* 
+    max-width: 700px; 
+    width: 80%
+    */
+    height: 75%;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.date {
+    text-transform: uppercase;
+    font-weight: 600;
+    /* letter-spacing: 3px; */
+    letter-spacing: 0.2rem;
+}
+
+.quote-paragraph {
+    border-left: 5px solid #7B89AD;
+    padding-left: 10px;
+}
+.entry-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* font-size: 2em; */
+    font-size: 2.0rem;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #6A9A9C, #246568, #6A9A9C);
+    background-image: -moz-linear-gradient(left, #6A9A9C, #246568, #6A9A9C);
+    background-image: -ms-linear-gradient(left,  #6A9A9C, #246568, #6A9A9C);
+    background-image: -o-linear-gradient(left, #6A9A9C, #246568, #6A9A9C );
+}
+

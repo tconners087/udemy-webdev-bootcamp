@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+#mainNav {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#header {
+  height: 100vh;
+  background: url(../IMG/img_header_bg.jpg);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fa-dragon {
+  padding-left: 10px;
+}
+.ds-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-color: black;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
+}
+
+.ds-card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.ds-card .card-body {
+  background-color: white;
+  vertical-align: middle;
+}
+
+.ds-buttons {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+}

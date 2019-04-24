@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+</head>
+
+<body>
+  <!-- action: where the form sends data to -->
+  <!-- method: what HTTP method -->
+  <h1>Login</h1>
+  <form action="" method="GET">
+    <label for="">
+      Email:
+      <input name="email" type="email" placeholder="email" required>
+    </label>
+
+    <label for="password">Password:</label>
+    <input type="password" placeholder="password" name="password" id="password" required>
+
+    <input type="Submit">
+  </form>
+
+  <p>Do you prefer cats or dogs?</p>
+
+  <form action="">
+    <label for="dogs">Dogs:</label>
+    <input type="radio" id="dogs" name="petChoice" value="dog">
+
+    <label for="cats">Cats:</label>
+    <input type="radio" id="cats" name="petChoice" value="cat">
+
+    <p>What's your favorite color?</p>
+    <select name="color" id="colorChoice">
+      <option value="red">Red</option>
+      <option value="orange">Orange</option>
+      <option value="yellow">Yellow</option>
+    </select>
+    <br>
+    <label for="bio"></label>
+    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+    <button>Go!</button>
+  </form>
+
+
+</body>
+
+</html>

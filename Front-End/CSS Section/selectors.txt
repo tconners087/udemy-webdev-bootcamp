@@ -1,0 +1,39 @@
+/* Element */
+li {
+
+}
+
+/* class */
+.hello {
+
+}
+
+/* id */
+#name {
+
+}
+
+/* star: selects everything on the page */
+* {
+
+}
+
+/* descendent selector: select descendents of a tag */
+li a {
+    /* every anchor tag inside of an li */
+}
+
+/* adjacent selector: select elements coming after an element */
+h4 + ul {
+    /* ul that is adjacent to an h4 */
+}
+
+/* attribute selector: select based off of an attribute */
+a[href="https://www.google.com"] {
+    /* select all links to google */
+}
+
+/* nth of type: select every nth of a specific element */
+ul:nth-of-type(3) {
+    /* selects the third ul on the page */
+}

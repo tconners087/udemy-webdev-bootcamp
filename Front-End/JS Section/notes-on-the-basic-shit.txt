@@ -1,0 +1,30 @@
+=== -> equal value and type
+!== -> not equal value or equal type
+
+prompt() returns values as a string.
+
+Number(string_var) -> turns string_var into a number
+
+DRY code: Don't Repeat Yourself.
+
+str.indexOf("word"); -> gives you the index of start of word if exists; else gives -1
+
+Need to study regular expressions.
+
+Higher order functions either take a function as argument or return a function.
+
+setInterval(func, ms); -> calls func every ms
+
+// var y = 0;
+// var x = setInterval(() => {
+//   console.log("yo");
+//   y++;
+//   if(y > 3)
+//     clearInterval(x);
+// }, 2000);
+
+// if(y > 3)
+//   clearInterval(x);
+
+the value returned can be called in clearInterval(val) to stop the calls.
+

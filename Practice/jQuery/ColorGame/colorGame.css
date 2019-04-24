@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+}
+body {
+  background-color: #393939;
+  height: 100%
+}
+
+h1 {
+  line-height: 95%;
+}
+
+.square {
+  background-color: pink;
+  height: 150px;
+  width: 150px;
+  transition: background-color 0.5s;
+}
+
+.grid-row col{
+  /* margin: 0; */
+}
+
+.btn {
+  border: 0 none;
+  border-radius: 0;
+  background-color:white;
+  text-transform: uppercase;
+  color: steelblue;
+  font-weight: 700;
+  outline: none;
+}
+
+.btn:hover {
+  color: white;
+  background-color: steelblue;
+  border:none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.selected {
+  color: white;
+  background-color: steelblue;
+  border:none;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+#header div {
+  background-color: steelblue;
+  transition: all, 0.5s;
+}
+
+#controls div {
+  background-color: white;
+}
+
+#container {
+  margin: 20px auto;
+  max-width: 600px;
+}
