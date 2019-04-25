@@ -1,0 +1,13 @@
+<% include partials/header %> 
+  <h1>Friends page</h1>
+  <% friends.forEach(function(friend) { %> 
+    <li><%=friend%></li>
+  <% }) %> 
+
+  <form action="/addfriend" method= "post">
+    <input type="text" name="newFriend" placeholder="name">
+    <button type="submit">Submit</button>
+  </form>
+<% include partials/footer %> 
+<%# Set up a post route in app.js with new route name %>
+<%# Create a form to post to new route %>
