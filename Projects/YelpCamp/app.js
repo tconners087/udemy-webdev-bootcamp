@@ -57,7 +57,7 @@ app.get('/campgrounds/new', (req, res) => {
 
 // SHOW
 app.get('/campgrounds/:id', (req, res) => {
-  Campground.findOne({_id: req.params.id}).populate("comments").exec(function (err, foundCamp) {
+  Campground.findOne({ _id: req.params.id }).populate("comments").exec(function (err, foundCamp) {
     if (err) {
       console.log(err);
     } else {
@@ -69,8 +69,8 @@ app.get('/campgrounds/:id', (req, res) => {
 });
 
 app.get('/campgrounds/:id/comments/new', (req, res) => {
-  Campground.findOne({_id: req.params.id}, function(err, camp) {
-    if(err) {
+  Campground.findOne({ _id: req.params.id }, function (err, camp) {
+    if (err) {
       console.log(err);
     } else {
       res.render('comments/new', {
@@ -81,22 +81,22 @@ app.get('/campgrounds/:id/comments/new', (req, res) => {
 });//
 
 app.post('/campgrounds/:id/comments', (req, res) => {
-  Campground.findOne({_id: req.params.id}, function(err, camp) {
-    if(err) {
+  Campground.findOne({ _id: req.params.id }, function (err, camp) {
+    if (err) {
       console.log(err);
       res.redirect('/campgrounds');
     } else {
       Comment.create(
         req.body.comment
-      , function(err, comment) {
-        if(err) {
-          console.log(err);
-        } else {
-          camp.comments.push(comment);
-          camp.save();
-          res.redirect('/campgrounds/' + camp._id);
-        }
-      });
+        , function (err, comment) {
+          if (err) {
+            console.log(err);
+          } else {
+            camp.comments.push(comment);
+            camp.save();
+            res.redirect('/campgrounds/' + camp._id);
+          }
+        });
     }
   });
 });
