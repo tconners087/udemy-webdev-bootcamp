@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  /* Target content, padding, and border when setting width and height of every element. Margin excluded. */
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -6,6 +11,18 @@
 .post-form {
   width: 30%;
   margin: 20px auto;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.show-page-card-title {
+  display: inline-block;
+}
+
+.main-container {
+  margin-top: 10px;
 }
 
 @media (min-width: 34em) {
